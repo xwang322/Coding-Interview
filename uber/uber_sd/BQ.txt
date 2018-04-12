@@ -1,0 +1,40 @@
+About Uber Freight:
+launcher news: https://www.cnbc.com/2017/05/18/uber-launches-uber-freight.html
+Key points:
+1. Texas based now
+2. Transportation and material moving is the fourth-largest employment group in US.
+3. What is the biggest challenge? Rational use of resources? Flexible driving hours and proper arrangement of drivers?
+4. Only allow professional drivers
+5. Uber acquires Otto and Google has Waymo.
+
+Another link: https://www.wired.com/2017/05/uber-freight/
+Key points:
+1. Drivers can find loads sorted by destination, deadline and required equipment.
+2. Uber will determine pricing based on market conditions and expects to refine the automate the process as it gains experience and data.
+3. What is Uber tool? What is Uber eats?
+
+link: https://www.trucks.com/2017/08/03/uber-freight-expands-app/
+Key points:
+1. Official launcher May 2017. Expanding to west, midwest, south, CA, Arizona, Carolina
+2. Competition among on-demand freight matching startups, like Convoy.
+3. "The question becomes how comfortable are shippers dealing with startups that are heavy on tech and little light on freight side"
+
+link: https://techcrunch.com/2018/03/06/uber-self-driving-trucks-are-now-moving-cargo-for-uber-freight-customers/
+Key points:
+1. Uber will load up the freight from a conventional human driven truck who collects the load from the shipper and then does a short haul
+run to a transfer hub. The short haul truck then load its cargo onto a long-haul freight transport.
+2. What is the point of having this short haul cap at the beginning and the end of the overall trip? Autonomous driving for the long haul.
+
+link: https://freight.uber.com/faq
+1. Currently only working within 53' Dry Van
+2. Why Uber pays for a load to carriers? Only promotion or something I do not know?
+
+Preparations:
+Think about related system design questions regarding what Freight is doing.
+
+
+
+
+
+
+Some common behavior questions:
