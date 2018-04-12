@@ -1,0 +1,12 @@
+class Solution(object):
+    def findContentChildren(self, g, s):
+        g.sort()
+        s.sort()
+        child = 0
+        cookie = 0
+        while cookie < len(s) and child < len(g):
+            if s[cookie] >= g[child]:
+                child += 1
+            cookie += 1
+        return child
+            
