@@ -1,0 +1,30 @@
+OS knowledge:
+1. Why threads? Multiple threads of same process share the same address space. If not thread, cumbersome programming and high communication
+overheads and expensive context switching.
+2. Threads share the same codes, but each thread may be executing different code at the same time. PTBR same but different IP (instruction pointer)
+3. Threads have different stack pointers, meaning they are directing to different stacks in the RAM. Different stack local variables and different return address.
+4. Threads share same codes, PID, heap, open file descriptors, current working directory and user/group id.
+5. Lock correctness: mutual exclusion, deadlock-free (must allow one thread to proceed), starvation-free (allow each waiting thread to enter)
+6. What is interrupt? Why interrupt could influence lock?
+7. Critical section should be as small as possible.
+8. Couple of methods to implement locks: load and store (Peterson's algo); test and set; compare and swap;
+9. Instead of thread self-spinning, issue ticket locks for each thread (fetch and add) and if the turn is not its own turn, yield not spinning.
+10. why we need guard? why spinning guard is OK? why park(), setpark() and unpark()?
+11. Depends on how long lock is released with context switch, determine if it is spin-wait (t<C) or block (context switch) (t>C).
+12. producer/consumer model for condition variables, but if multiple consumers, when cond_signal sent, which thread to wake up is a problem.
+13. condition variable wait: send the caller thread to sleep and release the lock (not in code), when awoken, requires the lock automatically (not in the code).
+14. condition variable can have two variables (empty/full state and mutex lock). mostly solving ordering problems.
+15. deadlock happens when multithread acquire locks in different orders.
+16. Encapsulation what is the problem there? wait-free algorithm? Summarize the 4 possible problems with lock.
+17. Semaphore how is i and j, myi and myj shared or private?
+18. Only implement lock on find empty and find full in multiple producer/consumer model. sem_wait and signal is outside, lock is inside.
+19. Semaphore last example what is wrong with the codes?
+20. Both stack and heap hold dynamic variables.
+21. How do the program know how much to allocate inside the stack when recursion?
+22. Heap allocation is random and unpredictable. So there is fragmentation.
+23. Why int z is stored in stack and *z is in heap? OS lecture 4 pg 6.
+24. Virtual memory: OS through MMU (memory management unit) to store each process segment number, base address, bounds address and R/W right.
+25. #define and constant variable are stored in code are or static data area?
+26. Why malloc is for heap not for stack? malloc is the same as new, so whatever allocated are stored in heap.
+27. Difference between malloc and new: 1. primitive data structure can also be initialized by new, malloc manually calculate the size while new let compiler calculate. Some other differences such as return type, failure condition and memory management.
+28. delete could only de-allocate by new command and free can only de-allocate by malloc command. Question on g4g?
