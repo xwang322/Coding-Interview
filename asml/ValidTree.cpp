@@ -19,9 +19,9 @@ struct NodePair {
     }
 };
 
-unordered_map<TreeNode*, unordered_set<TreeNode*> > make_graph(int number, vector<NodePair*>& pairs) {
+unordered_map<TreeNode*, unordered_set<TreeNode*>> make_graph(int number, vector<NodePair*>& pairs) {
     unordered_map<TreeNode*, unordered_set<TreeNode*>> graph;
-  //unordered_map<TreeNode*, <unordered_set<TreeNode*>>()
+    //unordered_map<TreeNode*, <unordered_set<TreeNode*>>()
     for (auto pair : pairs) {
         graph[pair->child].insert(pair->parent);
         //cout << pair->child->val << " " << pair->parent->val << endl;
@@ -38,7 +38,7 @@ bool isValidBinaryTree(vector<NodePair*>& pairs) {
         //cout << pair->child->val << endl;
     }
     int number = numNodes.size();
-    unordered_map<TreeNode*, unordered_set<TreeNode* > > graph = make_graph(number, pairs);
+    unordered_map<TreeNode*, unordered_set<TreeNode* >> graph = make_graph(number, pairs);
     int degreezero = 0;
     for (auto node : numNodes) {
         if (graph[node].size() == 0) degreezero++;
