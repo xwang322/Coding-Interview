@@ -35,7 +35,6 @@ void heapSort(int array[], int size) {
     }
 }
 
-
 int main(int argc, char* argv[]) {
     int array[] = {1,5,3,9,7,8};
     int array_size = sizeof(array)/sizeof(array[0]);

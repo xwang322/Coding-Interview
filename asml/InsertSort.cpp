@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void quickSort(int array[], int size)
+void insertionSort(int array[], int size)
 {
     int i, j, key;
     for (i = 1; i < size; i++)
@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
     int size = sizeof(array)/sizeof(array[0]);
     printf("Before the array is sorted: ");
     printArray(array, size);
-    quickSort(array, size);
+    insertionSort(array, size);
     printf("After the array is sorted: ");
     printArray(array, size);
     return 0;
