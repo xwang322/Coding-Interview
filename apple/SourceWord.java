@@ -2,7 +2,7 @@
 import java.util.*;
 import java.io.*;
 class Solution {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         List<String> question = new ArrayList<>();
         question.add("aabc");
         question.add("aabce");
@@ -37,7 +37,7 @@ class Solution {
 
  // another easier way to save space
 class Solution {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         List<String> question = Arrays.asList(new String[]{"aabc","aabce","a",""});
         List<String> answer = SourceWord(new String("aabcf"), question);
         for (String each : answer) {
