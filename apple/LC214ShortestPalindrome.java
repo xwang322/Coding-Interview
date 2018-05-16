@@ -2,7 +2,7 @@ class Solution {
     public String shortestPalindrome(String s) {
         if (s == null || s.length() == 0) return s;
         StringBuilder sb1 = new StringBuilder();
-        sb1.append(s);
+        sb1.append(s); // Can we simply reverse a string without calling StringBuilder?
         String r = sb1.reverse().toString();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < r.length()+1; i++) {

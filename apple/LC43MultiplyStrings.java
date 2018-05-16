@@ -12,7 +12,7 @@ class Solution {
                 pos[p2] = sum%10;
             }
         }
-        for (int p : pos) System.out.println(p);
+        // for (int p : pos) System.out.println(p);
         StringBuilder sb = new StringBuilder();
         for (int p : pos) {
            if (!(p == 0 && sb.length() == 0)) sb.append(p);
