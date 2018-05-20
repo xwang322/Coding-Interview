@@ -20,10 +20,7 @@ class Codec:
                 answer += ',' + str(node.val)
                 queue.append(node.left)
                 queue.append(node.right)
-        print answer
         return answer
-
-
 
     def deserialize(self, data):
         data = data.split(',')

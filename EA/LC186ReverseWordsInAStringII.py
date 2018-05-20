@@ -12,7 +12,6 @@ class Solution(object):
                 start = i+1
             i += 1
         string.pop()
-        print len(string)
         self._swap(string, 0, len(string)-1)
 
     def _swap(self, string, start, end):

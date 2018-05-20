@@ -26,7 +26,6 @@ class Codec:
         if not data:
             return None
         data = map(int, data.split(','))
-        print data
         stack = []
         root = TreeNode(data[0])
         node = root

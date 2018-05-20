@@ -16,7 +16,7 @@ class Solution(object):
             tempsum = 0
             for i in range(32)[::-1]:
                 curbit = (num>>i)&1
-                if curbit^1 not in t:
+                if curbit^1 not in t: # the same as negation of curbit
                     t = t[curbit]
                 else:
                     tempsum += (1<<i)
