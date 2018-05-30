@@ -1,5 +1,6 @@
 class Solution(object):
     # input is a char array, not a strict string
+    # in-place replacement
     def reverseWords(self, string):
         if not string:
             return

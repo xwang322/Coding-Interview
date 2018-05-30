@@ -44,7 +44,7 @@ class Solution(object):
 
     def dfs(self, dictionary, answer, beginWord, endWord, path):
         if beginWord == endWord:
-			# check pylist.py for why use ':' but not simply append, one is reference, the other is content
+			# check PyListDifferences.py for why use ':' but not simply append, one is reference, the other is content
             answer.append(path[:])
             return
         for word in dictionary[beginWord]:

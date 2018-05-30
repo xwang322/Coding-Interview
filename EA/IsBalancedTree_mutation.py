@@ -53,7 +53,7 @@ class IsBalancedTree(object):
 
     def isBalanced(self):
         root = self.node1
-        return self.maxDepth(root) - self.minDepth(root) <= 2
+        return self.maxDepth(root) - self.minDepth(root) < 2
 
 obj = IsBalancedTree()
 print obj.isBalanced()
