@@ -32,7 +32,8 @@ class Solution(object):
             i += 1
         return answer
 
-    def addInterval(self, intervals, newInterval):
+    def getWeightedSum(self, intervals, newInterval):
+        # I think getWeightedSum means get the total coverage
         if not newInterval or not newInterval:
             return 0
         start = newInterval.start
