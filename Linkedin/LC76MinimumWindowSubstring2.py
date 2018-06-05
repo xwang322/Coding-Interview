@@ -18,12 +18,6 @@ class Solution(object):
                     break
                 counter_s[s[end]] = counter_s.get(s[end], 0)+1
                 end += 1
-            # this part of codes are actually not needed at all...
-            if all(key in counter_s and counter_s[key] >= counter_t[key] for key in counter_t):
-                if end-start < answer:
-                    answer = end-start
-                    answer_string = s[start:end]
-            # up to here
             while all(key in counter_s and counter_s[key] >= counter_t[key] for key in counter_t):
                 counter_s[s[start]] -= 1
                 start += 1
