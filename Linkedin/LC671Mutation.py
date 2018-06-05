@@ -8,7 +8,6 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
 class Solution(object):
     def findSecondMinimumValue(self, root, k):
         if not root:
