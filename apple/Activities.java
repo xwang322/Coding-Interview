@@ -4,7 +4,8 @@ Given a list of strings: ['running, 0800, 1000', 'swimming,1000,1100', 'eating,1
 The meaning of the strings are 'activity, start time, end time'
 prob1. Write a function to output all the unique activities in the list
 prob2. Write a function to calculate the duration of each activity in minutes
-prob3. Write a function to merge all the time intervals in the list that have overlaps, leave the non-overlapping intervals alone, and finally output all non-overlapping time intervals after merging those that overlap. O(N^2) solution not acceptable.
+prob3. Write a function to merge all the time intervals in the list that have overlaps, 
+leave the non-overlapping intervals alone, and finally output all non-overlapping time intervals after merging those that overlap. O(N^2) solution not acceptable.
 */
 import java.util.*;
 import java.io.*;
@@ -28,7 +29,7 @@ class Solution {
 
     public static List<String> Activities(String[] strings){
         List<String> answer = new ArrayList<>();
-        for (String str :  strings) {
+        for (String str : strings) {
             String[] str_list = str.split(",");
             if (str_list.length != 3) break;
             String activity = new String(str_list[0]);
@@ -40,7 +41,7 @@ class Solution {
     public static List<String> ActivitiesTime(String[] strings){
         List<String> answer = new ArrayList<>();
         Map<String, Integer> hm = new HashMap<>();
-        for (String str :  strings) {
+        for (String str : strings) {
             String[] str_list = str.split(",");
             if (str_list.length != 3) break;
             String activity = new String(str_list[0]);
@@ -60,7 +61,7 @@ class Solution {
 
     public static List<int[]> TimeInterval(String[] strings) {
         List<int[]> intervals = new ArrayList<>();
-        for (String str :  strings) {
+        for (String str : strings) {
             String[] str_list = str.split(",");
             if (str_list.length != 3) break;
             int start = Integer.parseInt(str_list[1].trim());

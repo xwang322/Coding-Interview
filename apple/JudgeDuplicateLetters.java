@@ -1,6 +1,6 @@
-'''
+/*
 判断一个字符串里没有重复字符
-'''
+*/
 import java.io.*;
 import java.util.*;
 class Solution {

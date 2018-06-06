@@ -12,7 +12,6 @@ class Solution {
     }
 
     public static String ConvertTime(int n) {
-        String answer = "";
         int hour = n/3600;
         n %= 3600;
         int minute = n/60;
