@@ -1,0 +1,37 @@
+facebook recommendation
+https://www.facebook.com/help/www/501283333222485
+
+https://www.careercup.com/question?id=5760108168478720
+
+Each Edge has three components important to Facebook’s algorithm:
+
+First, there’s an affinity score between the viewing user and the item’s creator — 
+if you send your friend a lot of Facebook messages and check their profile often, 
+then you’ll have a higher affinity score for that user than you would, say, an old acquaintance you haven’t spoken to in years.
+Second, there’s a weight given to each type of Edge. 
+A comment probably has more importance than a Like, for example.
+And finally there’s the most obvious factor — time. The older an Edge is, the less important it becomes.
+Multiply these factors for each Edge then add the Edge scores up and you have an Object’s EdgeRank.
+
+design instagram
+http://instagram-engineering.tumblr.com
+
+design rate limiter
+http://www.nurkiewicz.com/2012/09/ratelimiter-discovering-google-guava.html
+
+Design netflix
+http://codeinterviews.com/Uber-Design-Netflix/
+http://techblog.netflix.com
+
+Design excel
+http://codeinterviews.com/Uber-Design-Excel/
+
+
+design rate limiter
+http://yuanhsh.iteye.com/blog/2233446
+
+design tinyURL
+good explain and code:http://n00tc0d3r.blogspot.com/2013/09/big-data-tinyurl.html
+https://www.careercup.com/question?id=5185808560553984
+
+or: http://www.geeksforgeeks.org/how-to-design-a-tiny-url-or-url-shortener/
